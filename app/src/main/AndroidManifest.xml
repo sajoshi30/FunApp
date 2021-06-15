@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.funapp">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FunApp">
+        <activity android:name=".Control.savedMemesActivity"></activity>
+        <activity android:name=".Control.enlargeSavedActivity" />
+        <activity android:name=".View.factsActivity" />
+        <activity android:name=".View.quotesActivity" />
+        <activity android:name=".View.memeActivity" />
+        <activity android:name=".View.jokesActivity" />
+        <activity android:name=".Main.splashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main.MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
